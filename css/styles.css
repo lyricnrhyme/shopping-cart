@@ -1,0 +1,14 @@
+* {
+	margin: 0px;
+}
+
+#header {
+	background-color: rgb(245, 166, 35);
+	color: rgb(147,93,22);
+	font-family: "Open Sans", sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin: 0px;
+}

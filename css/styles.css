@@ -63,3 +63,30 @@
 .price:after {
 	content: ".00";
 }
+
+#subtotal {
+	display: flex;
+	margin-left: 9%;
+	margin-right: 9%;
+	margin-bottom: 30px;
+	border-top: 2px solid rgb(216, 216, 216);
+	padding-top: 9px;
+}
+
+#subtotalTitle {
+	margin-left: 9%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#totalPrice {
+	margin-left: auto;
+}
+
+#totalPrice:before {
+	content: "$";
+}
+
+#totalPrice:after {
+	content: ".00";
+}

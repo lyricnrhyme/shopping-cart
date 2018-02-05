@@ -2,11 +2,11 @@
 
 //var shoppingCart = ["White Tea", "Surfing Gear", "Bitcoin", "More Tea", "Money"];
 
-var shoppingCart = [{listImg: "../images/happy.png", itemName: "Happy Friend", itemDescription: "Someone who will always remind you to smile!", price: 100.00},
-	{listImg: "../images/Github.png", itemName: "Github", itemDescription: "The world's leading software developing platform", price: 1000.00},
-	{listImg: "../images/SquareUp.png", itemName: "Square", itemDescription: "It's Easy to Take Credit Cards", price: 1000.00},
-	{listImg: "../images/LetterH.jpg", itemName: "Letter H", itemDescription: 'Start your words right like "Hello", "Hi, "Happy", "Horchata", and more!', price: 1000.00},
-	{listImg: "../images/Tinder.png", itemName: "Tinder", itemDescription: "Swipe. Match. Chat.", price: 1000.00}];
+var shoppingCart = [{listImg: "../images/happy.png", itemName: "Happy Friend", itemDescription: "Someone who will always remind you to smile!", price: 100},
+	{listImg: "../images/Github.png", itemName: "Github", itemDescription: "The world's leading software developing platform", price: 1000},
+	{listImg: "../images/SquareUp.png", itemName: "Square", itemDescription: "It's Easy to Take Credit Cards", price: 1000},
+	{listImg: "../images/LetterH.jpg", itemName: "Letter H", itemDescription: 'Start your words right like "Hello", "Hi, "Happy", "Horchata", and more!', price: 1000},
+	{listImg: "../images/Tinder.png", itemName: "Tinder", itemDescription: "Swipe. Match. Chat.", price: 1000}];
 
 function getData(data){
 	for(var i=0; i<shoppingCart.length; i++) {
@@ -66,8 +66,26 @@ function getData(data){
 	// 	divElem.appendChild(descripBox);
 	}
 }
-
 getData(shoppingCart);
+
+var subtotalElem = document.createElement("div");
+subtotalElem.id = "subtotal";
+document.body.appendChild(subtotalElem);
+
+var subtotalTitle = document.createElement("div");
+subtotalTitle.id = "subtotalTitle";
+subtotalTitle.innerHTML = "Subtotal";
+subtotalElem.appendChild(subtotalTitle);
+
+var totalPrice = document.createElement("div");
+totalPrice.id = "totalPrice";
+var total = 0;
+for (var i=0; i<shoppingCart.length; i++) {
+	total += shoppingCart[i].price;
+}
+totalPrice.innerHTML = total;
+subtotalElem.appendChild(totalPrice);
+
 
 // function makeElements(elem, marker, data){
 // 	var createBox = document.createElement(elem);

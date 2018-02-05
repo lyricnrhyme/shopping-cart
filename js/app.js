@@ -2,9 +2,11 @@
 
 //var shoppingCart = ["White Tea", "Surfing Gear", "Bitcoin", "More Tea", "Money"];
 
-var shoppingCart = [{
-	listImg: "../images/happy.png", itemName: "Happy Friend", itemDescription: "Someone who will always remind you to smile!", price: 1000.00}
-];
+var shoppingCart = [{listImg: "../images/happy.png", itemName: "Happy Friend", itemDescription: "Someone who will always remind you to smile!", price: 100.00},
+	{listImg: "../images/Github.png", itemName: "Github", itemDescription: "The world's leading software developing platform", price: 1000.00},
+	{listImg: "../images/SquareUp.png", itemName: "Square", itemDescription: "It's Easy to Take Credit Cards", price: 1000.00},
+	{listImg: "../images/LetterH.png", itemName: "Letter H", itemDescription: 'Start your words right like "Hello", "Hi, "Happy", "Horchata", etc', price: 1000.00},
+	{listImg: "../images/Tinder.png", itemName: "Tinder", itemDescription: "Swipe. Match. Chat.", price: 1000.00}];
 
 function getData(data){
 	for(var i=0; i<data.length; i++) {

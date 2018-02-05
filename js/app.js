@@ -3,8 +3,8 @@
 //var shoppingCart = ["White Tea", "Surfing Gear", "Bitcoin", "More Tea", "Money"];
 
 var shoppingCart = [{
-	listImage: "White", 
-}];
+	listImg: "../images/happy.png", itemName: "Happy Friend", itemDescription: "Someone who will always remind you to smile!", price: 1000.00}
+];
 
 function getData(data){
 	for(var i=0; i<data.length; i++) {

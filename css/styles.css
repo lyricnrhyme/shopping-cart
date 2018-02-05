@@ -1,4 +1,5 @@
 * {
+	font-family: "Open Sans", sans-serif;
 	margin: 0px;
 }
 
@@ -14,30 +15,33 @@
 }
 
 #divider {
-	margin: 200px;
+	margin: 100px;
+	background-color: gold;
 }
 
-#shoppingInfo {
-	font-family: "Open Sans", sans-serif;
-	text-align: center;
+#wholeCart {
+	margin-left: 9%;
 }
 
-#list {
-	font-family: "Open Sans", sans-serif;
-	text-align: left;
-	margin-left: 200px; 
+.cartItem {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	display: flex;
 }
 
-.listItem {
-	font-size: 20px;
+.listImg {
+	width: 6%;
+	height: 6%;
+	padding-right: 20px;
+}
+
+.itemName {
+	font-size: 18px;
 	font-weight: bold;
 }
 
-.description {
-	font-size: 15px;
-}
-
-#subtotal {
-	text-align: left;
-	margin-left: 200px;
+.itemdescription {
+	
 }
